@@ -26,7 +26,7 @@ pipeline {
         script {
           deploy(
               
-            namespace: 'cicdtask'
+            namespace: 'cicdtask',
             deploymentName: 'my-app',
             yamlFilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Deployments/values.yaml'
     
