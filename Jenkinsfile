@@ -10,8 +10,7 @@ pipeline {
         } 
         stage('Test') {
             steps {
-                // Run Maven tests using shared library
-                mavenTest()
+                testMaven.call()
             }
         }
        stage('Build Docker Image') {
