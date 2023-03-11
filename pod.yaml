@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: my-container
-    image: rampriyatham/demo-test:latest
+    image: krvnb/my-docker-image:1.0.0
     ports:
     - containerPort: 9090
 
