@@ -8,17 +8,17 @@ node {
   }
 
   
-  stage('Build'){
-    build.call()
-  }
+//   stage('Build'){
+//     build.call()
+//   }
   
-  stage('Test'){
+//   stage('Test'){
 
-    test.call()
-  }
-  stage('Image'){
-    dockerimage.call()
-  }
+//     test.call()
+//   }
+//   stage('Image'){
+//     dockerimage.call()
+//   }
 
 //   stage('Publish'){
 
