@@ -3,12 +3,12 @@
 pipeline {
     agent any
     stages {
-        stage('Packaging files to Executable Applications') {
+        stage('Packaging files to Executable Applications...........') {
             steps {
                 mavenBuild('pom.xml', '-Xmx2g')
             }
         } 
-       stage('Building Image and Pushing Into Artifactory') {
+       stage('Building Image and Pushing Into Artifactory.......') {
       steps {
         dockerBuild(
           dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile',
@@ -21,7 +21,7 @@ pipeline {
         )
       }
     }
-     stage('Deploy') {
+     stage('Deploying Application......') {
       steps {
         script {
           deploy(
