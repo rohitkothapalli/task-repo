@@ -3,9 +3,9 @@
 
 node {
   
-  stage('Clone Repo'){
-     SCM.call()
-  }
+//   stage('Clone Repo'){
+//      SCM.call()
+//   }
 
   
 //   stage('Build'){
