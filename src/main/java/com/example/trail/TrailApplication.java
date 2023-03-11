@@ -15,7 +15,7 @@ public class TrailApplication {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello, World! with a version 1.0.1";
+        return "Hello, World! with a version 1.0.2";
     }
 }
 
