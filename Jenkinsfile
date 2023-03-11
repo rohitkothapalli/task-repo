@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                SCM.checkoutGit('git', 'https://github.com/rohitkothapalli/task-repo')
+                checkoutGit('git', 'https://github.com/rohitkothapalli/task-repo')
             }
         }
     }
