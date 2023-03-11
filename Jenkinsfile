@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build Project') {
             steps {
-                mavenBuild('path/to/pom.xml', '-Xmx2g')
+                mavenBuild('pom.xml', '-Xmx2g')
             }
         }
     }
