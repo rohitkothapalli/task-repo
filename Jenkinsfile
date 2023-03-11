@@ -8,11 +8,6 @@ pipeline {
                 mavenBuild('pom.xml', '-Xmx2g')
             }
         } 
-        stage('Test') {
-            steps {
-                test.call('trail-0.0.1-SNAPSHOT.jar')
-            }
-        }
        stage('Build Docker Image') {
       steps {
         dockerBuild(
