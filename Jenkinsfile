@@ -11,7 +11,7 @@ pipeline {
        stage('Build Docker Image') {
       steps {
         dockerBuild(
-          dockerfilePath: './path/to/Dockerfile',
+          dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile',
           buildArgs: '--build-arg MY_VAR=value',
           dockerImageName: 'my-docker-image',
           dockerImageTag: '1.0.0',
