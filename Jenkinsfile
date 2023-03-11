@@ -3,11 +3,11 @@
 pipeline {
     agent any
     stages {
-        stage('Packaging files to Executable Applications...........') {
-            steps {
-                mavenBuild('pom.xml', '-Xmx2g')
-            }
-        } 
+//         stage('Packaging files to Executable Applications...........') {
+//             steps {
+//                 mavenBuild('pom.xml', '-Xmx2g')
+//             }
+//         } 
        stage('Building Image and Pushing Into Artifactory.......') {
       steps {
         dockerBuild(
