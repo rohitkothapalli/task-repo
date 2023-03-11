@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                checkoutCode('https://github.com/rohitkothapalli/task-repo')
+                checkout('https://github.com/rohitkothapalli/task-repo')
             }
         }
         // Additional stages here
