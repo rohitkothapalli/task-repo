@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: krvnb/my-docker-image:1.0.0
+        image: krvnb/my-docker-image:latest
         resources:
           limits:
             memory: "128Mi"
