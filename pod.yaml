@@ -10,9 +10,5 @@ spec:
     image: krvnb/my-docker-image:1.0.0
     ports:
     - containerPort: 9090
-#     command: ["java","-jar","trail-0.0.1-SNAPSHOT.jar"]
-  resources:
-    limits:
-      memory: "128Mi"
-      cpu: "100m"
+    command: ["java","-jar","/target/trail-0.0.1-SNAPSHOT.jar"]
 
