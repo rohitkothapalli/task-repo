@@ -7,6 +7,12 @@ pipeline {
             steps {
                 mavenBuild('pom.xml', '-Xmx2g')
             }
+        } 
+        stage('Test') {
+            steps {
+                // Run Maven tests using shared library
+                mavenTest()
+            }
         }
        stage('Build Docker Image') {
       steps {
