@@ -10,15 +10,7 @@ pipeline {
         }
         stage('Build Docker Image') {
       steps {
-        dockerBuild(
-          dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile',
-          buildArgs: '--build-arg MY_VAR=value',
-          dockerImageName: 'my-docker-image',
-          dockerImageTag: '1.0.0',
-          dockerRegistryUrl: 'https://registry.hub.docker.com',
-          dockerRegistryUsername: 'krvnb',
-          dockerRegistryPassword: 'RohiT.123'
-        )
+        dockerBuild(dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile', imageName: 'my-docker-image', imageTag: '1.0.0')
       }
     }
   }
