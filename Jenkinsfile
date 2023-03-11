@@ -10,7 +10,7 @@ pipeline {
         } 
         stage('Test') {
             steps {
-                testMaven.call()
+                test.call()
             }
         }
        stage('Build Docker Image') {
