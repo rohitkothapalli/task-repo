@@ -12,7 +12,6 @@ pipeline {
       steps {
         dockerBuild(
           dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile',
-//           buildArgs: '--build-arg MY_VAR=value',
           dockerImageName: 'my-docker-image',
           dockerImageTag: 'latest',
           dockerRegistryUrl: 'https://registry.hub.docker.com/',
