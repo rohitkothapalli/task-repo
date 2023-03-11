@@ -23,7 +23,7 @@ spec:
             cpu: "200m"
         ports:
         - containerPort: 9090
-        command: ["java" , "-jar", "/trail-0.0.1-SNAPSHOT.jar"]
+#         command: ["java" , "-jar", "/trail-0.0.1-SNAPSHOT.jar"]
 
 ---
 
