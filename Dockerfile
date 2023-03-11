@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk8:latest
 MAINTAINER kothapallirohitvenkatanagabangarraju
-RUN apt-get update && apt-get install -y maven
+RUN apt-get update && apt-get install -y maven --fix-missing
 WORKDIR /app
 COPY . /app
 RUN mvn clean package -X -DskipTests
