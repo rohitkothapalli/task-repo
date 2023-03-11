@@ -8,9 +8,9 @@ pipeline {
                 mavenBuild('pom.xml', '-Xmx2g')
             }
         }
-        stage('Build Docker Image') {
+       stage('Build and Push Docker Image') {
       steps {
-        dockerBuild(dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile', imageName: 'my-docker-image', imageTag: '1.0.0')
+        dockerBuildAndPush(imageName: 'my-docker-image', imageTag: '1.0.0', dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile', dockerHubCredentialsId: 'my-docker-hub-creds')
       }
     }
   }
