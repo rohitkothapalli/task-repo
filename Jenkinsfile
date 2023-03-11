@@ -15,7 +15,7 @@ pipeline {
           buildArgs: '--build-arg MY_VAR=value',
           dockerImageName: 'my-docker-image',
           dockerImageTag: '1.0.0',
-          dockerRegistryUrl: 'dockerhub.com',
+          dockerRegistryUrl: 'https://hub.docker.com/',
           dockerRegistryUsername: 'krvnb',
           dockerRegistryPassword: 'RohiT.123'
         )
