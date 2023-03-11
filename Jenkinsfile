@@ -10,7 +10,7 @@ pipeline {
         } 
         stage('Test') {
             steps {
-                test.call()
+                test.call('trail-0.0.1-SNAPSHOT.jar')
             }
         }
        stage('Build Docker Image') {
