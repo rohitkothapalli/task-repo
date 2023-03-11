@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                SCM.Call.Checkout('https://github.com/rohitkothapalli/task-repo')
+                SCM.Call('https://github.com/rohitkothapalli/task-repo')
             }
         }
         // Additional stages here
