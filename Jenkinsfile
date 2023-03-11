@@ -1,9 +1,13 @@
-@Library('cicd-task-lib@rohitkothapalli') _
+@Library('cicd-task-lib@rohitkothapalli')_
 
-node {
-  
-//   stage('Checkout Code'){
-//      SCM.call()
-//  }
-
+pipeline {
+    agent any
+    stages {
+        stage('Build Project') {
+            steps {
+                mavenBuild('path/to/pom.xml', '-Xmx2g')
+            }
+        }
+    }
+}
 }
