@@ -4,7 +4,7 @@
 node {
   
   stage('Clone Repo'){
-     clone.call()
+     SCM.call()
   }
 
   
