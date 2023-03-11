@@ -2,8 +2,8 @@
 
 node {
   
-  stage('Checkout Code'){
-     SCM.call()
- }
+//   stage('Checkout Code'){
+//      SCM.call()
+//  }
 
 }
