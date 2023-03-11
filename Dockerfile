@@ -9,6 +9,8 @@
 
 FROM adoptopenjdk/openjdk8:latest
 
+MAINTAINER krvnb
+
 RUN apt-get update && apt-get install -y maven
 
 WORKDIR /app
