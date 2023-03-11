@@ -16,8 +16,8 @@ pipeline {
           dockerImageName: 'my-docker-image',
           dockerImageTag: '1.0.0',
           dockerRegistryUrl: 'https://registry.hub.docker.com/',
-          dockerRegistryUsername: 'my-registry-username',
-          dockerRegistryPassword: 'my-registry-password'
+          dockerRegistryUsername: 'krvnb',
+          dockerRegistryPassword: 'RohiT.123'
         )
       }
     }
