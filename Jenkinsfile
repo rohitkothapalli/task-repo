@@ -20,18 +20,18 @@ pipeline {
         )
       }
     }
-//      stage('Deploying Application......') {
-//       steps {
-//         script {
-//           deploy(
+     stage('Deploying Application......') {
+      steps {
+        script {
+          deploy(
               
-//             namespace: 'cicdtask',
-//             deploymentName: 'my-app',
-//             yamlFilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Deployments/values.yaml'
+            namespace: 'cicdtask',
+            deploymentName: 'my-app',
+            yamlFilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Deployments/values.yaml'
     
-//           )
-//         }
-//       }
-//     }
+          )
+        }
+      }
+    }
   }
 }
