@@ -13,7 +13,7 @@ pipeline {
         dockerBuild(
           dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile',
           dockerImageName: 'my-docker-image',
-          dockerImageTag: '1.0.0',
+          dockerImageTag: '1.0.1',
           dockerRegistryUrl: 'https://registry.hub.docker.com/',
           dockerRegistryUsername: 'krvnb',
           dockerRegistryPassword: 'RohiT.123'
