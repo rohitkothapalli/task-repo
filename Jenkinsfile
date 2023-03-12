@@ -13,25 +13,25 @@ pipeline {
         dockerBuild(
           dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile',
           dockerImageName: 'my-docker-image',
-          dockerImageTag: 'latest',
+          dockerImageTag: '1.0.0',
           dockerRegistryUrl: 'https://registry.hub.docker.com/',
           dockerRegistryUsername: 'krvnb',
           dockerRegistryPassword: 'RohiT.123'
         )
       }
     }
-     stage('Deploying Application......') {
-      steps {
-        script {
-          deploy(
+//      stage('Deploying Application......') {
+//       steps {
+//         script {
+//           deploy(
               
-            namespace: 'cicdtask',
-            deploymentName: 'my-app',
-            yamlFilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Deployments/values.yaml'
+//             namespace: 'cicdtask',
+//             deploymentName: 'my-app',
+//             yamlFilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Deployments/values.yaml'
     
-          )
-        }
-      }
-    }
+//           )
+//         }
+//       }
+//     }
   }
 }
