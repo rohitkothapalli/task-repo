@@ -3,8 +3,8 @@
 
             
 pipeline {
-          agent {
-        node {
+    agent {
+        kubernetes {
             label "kubeagent"
         }
     }
