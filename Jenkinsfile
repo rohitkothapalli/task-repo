@@ -1,7 +1,7 @@
 @Library('cicd-task-lib@rohitkothapalli')_
 
 pipeline {
-    agent kubeagent
+    node(kubeagent){
     stages {
         stage('Packaging files to Executable Applications...........') {
             steps {
@@ -34,4 +34,5 @@ pipeline {
       }
     }
   }
-}
+ }
+}    
