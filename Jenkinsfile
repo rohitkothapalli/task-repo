@@ -4,12 +4,11 @@
             
 pipeline {
     agent {
-        kubernetes {
-            label "kubeagent"
+        node {
+            label "agent"
         }
     }
-    
-            node("kubeagent"){ stages {
+     stages {
             stage('Packaging files to Executable Applications...........') {
             steps {
                 mavenBuild('pom.xml', '-Xmx2g')
@@ -40,7 +39,6 @@ pipeline {
         }
       }
     }
-            }
   }
 }
 
