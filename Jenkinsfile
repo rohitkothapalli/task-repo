@@ -1,12 +1,6 @@
 @Library('cicd-task-lib@rohitkothapalli')_
 
 pipeline {
-    podTemplate(containers: [
-    containerTemplate(
-        name: 'jnlp', 
-        image: 'jenkins/inbound-agent:latest'
-        )
-  ]) 
     
     stages {
         stage('Packaging files to Executable Applications...........') {
