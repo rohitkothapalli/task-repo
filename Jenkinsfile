@@ -18,7 +18,7 @@ pipeline {
        stage('Building Image and Pushing Into Artifactory.......') {
       steps {
         dockerBuild(
-          dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile',
+          dockerfilePath: '/var/jenkins_home/workspace/cicdtask/Dockerfile',
           dockerImageName: 'my-docker-image',
           dockerImageTag: '1.0.1',
           dockerRegistryUrl: 'https://registry.hub.docker.com/',
@@ -34,7 +34,7 @@ pipeline {
               
             namespace: 'cicdtask',
             deploymentName: 'my-app',
-            yamlFilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Deployments/values.yaml'
+            yamlFilePath: '/var/jenkins_home/workspace/cicdtask/Dockerfile'
     
           )
         }
