@@ -2,7 +2,7 @@
 
 
             
-// pipeline {
+pipeline {
 //     agent {
 //         node {
 //             label "kubeagent"
