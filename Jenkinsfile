@@ -3,17 +3,14 @@
 
             
 pipeline {
-        kube-agent(containers: [
-    containerTemplate(
-        name: 'agent', 
-        image: 'krvnb/agent:latest'
-        )
-  ])
+          agent {
+        node {
+            label "kubeagent"
+        }
+    }
     
     stages {
-                
-                node(kubeagent)
-                { stage('Packaging files to Executable Applications...........') {
+            stage('Packaging files to Executable Applications...........') {
             steps {
                 mavenBuild('pom.xml', '-Xmx2g')
             }
@@ -43,7 +40,6 @@ pipeline {
         }
       }
     }
-                }
   }
 }
 
