@@ -18,7 +18,7 @@ pipeline {
        stage('Building Image and Pushing Into Artifactory.......') {
       steps {
         dockerBuild(
-          dockerfilePath: '/var/jenkins_home/workspace/cicdtask/Dockerfile',
+          dockerfilePath: '/Users/krvnbangarraju/.jenkins/workspace/cicd-task/Dockerfile',
           dockerImageName: 'my-docker-image',
           dockerImageTag: '1.0.1',
           dockerRegistryUrl: 'https://registry.hub.docker.com/',
