@@ -1,7 +1,13 @@
 @Library('cicd-task-lib@rohitkothapalli')_
 
 pipeline {
-    node(kubeagent){
+    podTemplate(containers: [
+    containerTemplate(
+        name: 'jnlp', 
+        image: 'jenkins/inbound-agent:latest'
+        )
+  ]) 
+    
     stages {
         stage('Packaging files to Executable Applications...........') {
             steps {
@@ -34,5 +40,5 @@ pipeline {
       }
     }
   }
- }
-}    
+}
+
