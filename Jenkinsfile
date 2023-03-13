@@ -13,7 +13,6 @@ pipeline {
     agent {
         node {
             label "kubeagent"
-            sh "
         }
     }
     
