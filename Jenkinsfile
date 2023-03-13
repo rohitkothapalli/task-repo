@@ -3,11 +3,11 @@
 
             
 pipeline {
-//     agent {
-//         node {
-//             label "kubeagent"
-//         }
-//     }
+    agent {
+        node {
+            label "kubeagent"
+        }
+    }
     
     stages {
         stage('Packaging files to Executable Applications...........') {
