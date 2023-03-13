@@ -1,5 +1,14 @@
 @Library('cicd-task-lib@rohitkothapalli')_
 
+podTemplate(containers: [
+  containerTemplate(
+      name: 'maven', 
+      image: 'maven:latest', 
+//       command: '', 
+      args: '99d'
+      )
+  ]
+            
 pipeline {
     agent {
         node {
