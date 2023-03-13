@@ -9,7 +9,7 @@ pipeline {
         }
     }
     
-    stages {
+            node("kubeagent"){ stages {
             stage('Packaging files to Executable Applications...........') {
             steps {
                 mavenBuild('pom.xml', '-Xmx2g')
@@ -40,6 +40,7 @@ pipeline {
         }
       }
     }
+            }
   }
 }
 
