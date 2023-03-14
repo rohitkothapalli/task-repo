@@ -8,7 +8,7 @@ pipeline {
             label "masteragent"
         }
     }
-//      stages {
+     stages {
 //             stage('Packaging files to Executable Applications...........') {
 //             steps {
 //                 mavenBuild('pom.xml', '-Xmx2g')
