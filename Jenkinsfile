@@ -32,7 +32,7 @@ pipeline {
           deploy(
               
 //             namespace: 'cicdtask',
-            deploymentName: 'my-app',
+//             deploymentName: 'my-app',
             yamlFilePath: '/home/jenkins/agent/workspace/cicdtask/Deployments/values.yaml'
     
           )
