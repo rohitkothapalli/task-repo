@@ -31,7 +31,7 @@ pipeline {
         script {
           deploy(
               
-            namespace: 'cicdtask',
+//             namespace: 'cicdtask',
             deploymentName: 'my-app',
             yamlFilePath: '/var/jenkins_home/workspace/cicdtask/Dockerfile'
     
