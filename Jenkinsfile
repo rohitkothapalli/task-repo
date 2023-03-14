@@ -33,7 +33,7 @@ pipeline {
               
 //             namespace: 'cicdtask',
             deploymentName: 'my-app',
-            yamlFilePath: '/var/jenkins_home/workspace/cicdtask/Dockerfile'
+            yamlFilePath: '/home/jenkins/agent/workspace/cicdtask/Deployments/values.yaml'
     
           )
         }
