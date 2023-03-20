@@ -9,30 +9,30 @@ pipeline {
         }
     }
      stages {
-//             stage('Packaging files to Executable Applications...........') {
-//             steps {
-//                 mavenBuild('pom.xml', '-Xmx2g')
-//             }
-//         } 
-//        stage('Building Image and Pushing Into Artifactory.......') {
-//       steps {
-//         dockerBuild(
-//           dockerfilePath: '/var/jenkins_home/workspace/cicdtask/Dockerfile',
-//           dockerImageName: 'my-docker-image',
-//           dockerImageTag: '1.0.1',
-//           dockerRegistryUrl: 'https://registry.hub.docker.com/',
-//           dockerRegistryUsername: 'krvnb',
-//           dockerRegistryPassword: 'RohiT.123'
-//         )
-//       }
-//     }
+            stage('Packaging files to Executable Applications...........') {
+            steps {
+                mavenBuild('pom.xml', '-Xmx2g')
+            }
+        } 
+       stage('Building Image and Pushing Into Artifactory.......') {
+      steps {
+        dockerBuild(
+          dockerfilePath: '/var/jenkins_home/workspace/cicdtask/Dockerfile',
+          dockerImageName: 'my-docker-image',
+          dockerImageTag: '1.0.1',
+          dockerRegistryUrl: 'https://registry.hub.docker.com/',
+          dockerRegistryUsername: 'krvnb',
+          dockerRegistryPassword: 'RohiT.123'
+        )
+      }
+    }
      stage('Deploying Application......') {
       steps {
         script {
           deploy(
               
-//             namespace: 'cicdtask',
-//             deploymentName: 'my-app',
+            namespace: 'cicdtask',
+            deploymentName: 'my-app',
             yamlFilePath: '/home/jenkins/agent/workspace/cicdtask/Deployments/values.yaml'
     
           )
