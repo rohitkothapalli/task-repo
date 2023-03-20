@@ -3,11 +3,11 @@
 
             
 pipeline {
-    agent {
-        node {
-            label "agent1"
-        }
-    }
+//     agent {
+//         node {
+//             label "agent1"
+//         }
+//     }
      stages {
             stage('Packaging files to Executable Applications...........') {
             steps {
